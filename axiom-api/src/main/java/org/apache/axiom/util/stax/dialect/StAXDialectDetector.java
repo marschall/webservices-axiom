@@ -287,6 +287,11 @@ public class StAXDialectDetector {
             return BEADialect.INSTANCE;
         } else if ("com.ibm.ws.prereq.banshee".equals(symbolicName)) {
             return XLXP2Dialect.INSTANCE;
+        } else if ("aalto-xml".equals(title)) {
+            // Implementation-Title: aalto-xml
+            // Bundle-SymbolicName: com.fasterxml.aalto-xml
+            // Implementation-Vendor: FasterXML
+            return AaltoDialect.INSTANCE;
         } else {
             return null;
         }
